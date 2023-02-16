@@ -1,6 +1,6 @@
-@import "_variables";
+@import "_variables.scss";
 @import "_fotos.scss";
-@import "atp";
+@import "atp.scss";
 
  
 *{
@@ -83,7 +83,7 @@ body{
     --bs-gutter-y:0;
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
+   justify-content: space-around;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
@@ -226,8 +226,8 @@ body{
 
   .mb-4 {
     margin-bottom: 1.5rem!important;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
     
   #divNoticias{
@@ -263,7 +263,7 @@ body{
     }
   }
 
- 
+
   
   /*mediaqueries*/
 
@@ -298,8 +298,8 @@ body{
       width: 100%;
   
     }
-  
-   
+
+
   }
   
   
@@ -345,6 +345,15 @@ body{
     .overflow{
       overflow-x: hidden!important;
     }
+
+    .mb-4 {
+      margin-bottom: 1.5rem!important;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    
+
+ 
   
   }
 
@@ -366,6 +375,12 @@ body{
     .overflow{
       overflow-x: hidden!important;
     }
+
+    .mb-4 {
+      margin-bottom: 1.5rem!important;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   
     }
     
@@ -382,4 +397,8 @@ body{
       z-index: 100;
   }
   
+
+
+
+
     }

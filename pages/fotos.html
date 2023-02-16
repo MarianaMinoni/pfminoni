@@ -13,17 +13,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
-    <title> Media</title>
+    <title> Fotos</title>
 
 </head>
-<body>
-<body class="overflow"> 
-    <header id="navBar"> 
-        <!--nav bar-->
 
 <body class="overflow overflow-x-hidden"> 
+
   <header>
-  <nav class="navbar navbar-expand-lg fixed-top py-5" id="mainNav">
+
+<!--Navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top py-5">
     <div class="container-fluid px-4 px-lg-5">
         <a class="navbar-brand" href="../index.html">Plantea Tenis</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -45,7 +44,8 @@
    <br>
 <main>
 
-
+<h1 class="centrar">Los tenistas más populares.</h1>
+<br><br>
    <!-- Gallery -->
 <div id="row">
     <div class="col-sm-4 mb-4 mb-lg-0">
@@ -53,6 +53,7 @@
         src="../Assets/wta/iga.webp" 
               class="w-100  shadow-1-strong rounded mb-4"
         alt="Iga"/>
+        
         <p class="centrar textosNegritas">Iga Swiatek</p>
         <img
         src="../Assets/wta/Kasatkina.webp"
@@ -182,7 +183,31 @@
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Nadal"
         />
-        <p class="centrar textosNegritas">Rafael Nadal</p>
+
+                <!-- Button trigger modal -->
+                <div class="centrar">
+                  <button type="button" class="btn btn-primary ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Rafael Nadal
+                  </button>
+                  </div>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" >Rafael Nadal</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div>Edad:36</div>
+                          <div>País: España </div>
+                          <div>Ranking: 6°</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        <!-- <p class="centrar textosNegritas">Rafael Nadal</p> -->
   
 
       </div> 
@@ -192,7 +217,30 @@
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Rune"
         />
-        <p class="centrar textosNegritas">Holger Rune</p>
+        <!-- Button trigger modal -->
+        <div class="centrar">
+<button type="button" class="btn btn-primary ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Holger Rune
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Holer Rune</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>Edad:19</div>
+        <div>País: Dinamarca </div>
+        <div>Ranking: 9°</div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- <p class="centrar textosNegritas">Holger Rune</p> -->
     
       
   
@@ -216,22 +264,20 @@
 
 </main>
 
-<!--Footer-->
+ <!--Footer-->
 
-<footer class="py-1">
+ <footer class="py-1">
   <div class="container-fluid">
       <div  class="row ">
-          
-          <div class="col-md-12 text-end "><a class="text-decoration-none text-white-50  me-4 fs-7" href="https://www.aat.com.ar"> Sitio AAT Oficial</a></div>
-         
-          <div class="col-md-12 text-end " > <a class="text-decoration-none  text-white-50 me-4 fs-7 nav-item" href="https://www.atptour.com/es"> Sitio ATP Oficial</a></div>
-          <div class="col-md-12 text-end " > <a class="text-decoration-none  text-white-50 me-4 fs-7 nav-item" href="https://www.wtatennis.com/es"> Sitio WTA Oficial</a> </div> 
-          <div class="col-md-12 text-end " > <a class="text-decoration-none  text-white-50 me-4 fs-7 nav-item" href="https://www.itftennis.com/en/"> Sitio ITF Oficial</a> </div> 
-          <div class="col-md-12 text-end " > <a class="text-decoration-none text-white-50 me-4 fs-7 nav-item" href="#"> Ir Arriba</a></div>
-          <div><p class="text-bottom text-white-50 fs-7 text-center p-3">Copyright &copy; Planeta Tenis 2023</p></div>
-      </div>
+          <div class="col-md-12 text-end" > <a class="text-decoration-none text-white-50 me-4 nav-item" href="https://www.atptour.com/es"> Sitio ATP Oficial</a></div>
+          <div class="col-md-6 text-end fs-5"><a class="text-white-50 text-decoration-none">Copyright &copy; Planeta Tenis 2023</a></div>
+          <div class="col-md-6 text-end " > <a class="text-decoration-none  text-white-50 me-4  nav-item" href="https://www.wtatennis.com/es"> Sitio WTA Oficial</a> </div> 
+          <div class="col-md-12 text-end" > <a class="text-decoration-none  text-white-50 me-4  nav-item" href="https://www.itftennis.com/en/"> Sitio ITF Oficial</a> </div> 
+          <div class="col-md-12 text-end" > <a class=" text-decoration-none  text-white-50 me-4 nav-item" href="#"> Ir Arriba</a></div>
+        </div>
   </div>
-</footer>
+</footer> 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>

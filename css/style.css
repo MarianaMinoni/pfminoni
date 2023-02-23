@@ -127,8 +127,9 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   background-color: rgb(88, 87, 87);
+  height: 15vh;
 }
 header .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
@@ -141,11 +142,13 @@ header .navbar-brand {
 }
 
 main {
-  width: 100%;
+  width: 100vw;
 }
 
 /*Footer*/
 footer {
+  width: 100vw;
+  height: 25vh;
   background-color: rgb(88, 87, 87);
   padding: 50px;
 }
@@ -339,7 +342,6 @@ h4 {
 #divNoticias {
   border: solid 1px;
   border-radius: 1rem;
-  height: auto;
   padding: 1rem;
 }
 
@@ -590,6 +592,66 @@ footer{
     height: auto;
   }
 }
+/*de 1920 para abajo mostrame esto*/
+@media screen and (max-width: 1920px) {
+  #video-diez {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-nueve {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-ocho {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-siete {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-seis {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-cinco {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-cuatro {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-tres {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-dos {
+    width: 1300px;
+    height: 600px;
+  }
+  #video-uno {
+    width: 1300px;
+    height: 600px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+  }
+}
 /*de 1440 para abajo mostrame esto*/
 @media screen and (max-width: 1440px) {
   #video-diez {
@@ -740,6 +802,7 @@ footer{
   }
   footer {
     background-color: blueviolet;
+    height: auto;
   }
   #lista-footer {
     list-style: none;
@@ -852,6 +915,9 @@ footer{
     width: 400px;
     height: 300px;
   }
+  .h1, h1 {
+    font-size: 1rem;
+  }
 }
 /*de 320 para abajo mostrá esto*/
 @media screen and (max-width: 320px) {
@@ -860,6 +926,7 @@ footer{
   }
   .footer-col {
     width: 100%;
+    height: auto;
     margin-bottom: 30px;
   }
   .arriba {
@@ -924,5 +991,20 @@ footer{
   }
   ol, ul {
     padding: 0;
+  }
+  header {
+    width: 100vw;
+    background-color: rgb(88, 87, 87);
+    height: 10vh !important;
+  }
+  .navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgb(88, 87, 87);
   }
 }/*# sourceMappingURL=style.css.map */

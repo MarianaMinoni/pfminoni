@@ -113,6 +113,9 @@ body{
     text-align: center; 
    }
 
+   .overflow{
+    overflow-x: hidden!important;
+  }
   
 
 /*carousel*/
@@ -250,10 +253,7 @@ body{
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
   
-  .overflow{
-    overflow-x: hidden!important;
-  }
-  
+
   .btn.disabled, .btn:disabled, fieldset:disabled .btn {
     color: var(--bs-btn-disabled-color);
     pointer-events: none;
@@ -296,7 +296,8 @@ body{
   #divNoticias{
     border:solid 1px;
     border-radius: 1rem;
-    height: 60%;
+    height: auto;
+    padding: 1rem;
   }
 
 
@@ -327,6 +328,7 @@ body{
 
 
    /*paginación*/
+   
   hr {
     margin: 1rem 0;
     color: inherit;

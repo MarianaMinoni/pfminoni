@@ -18,11 +18,11 @@
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #ffffff;
   --bs-btn-hover-border-color: #000000;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-focus-shadow-rgb: rgb(141, 49, 226)
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #ffffff;
   --bs-btn-active-border-color: rgb(141, 49, 226) ;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(233, 110, 212, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #ffffff;
   --bs-btn-disabled-border-color: rgb(141, 49, 226) ;
@@ -70,26 +70,22 @@ tr {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23212529"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e)!important;
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%230a58ca"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e);
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%233c3c3"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e)!important;
   --bs-accordion-btn-focus-border-color: #646464;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(140, 49, 226, 0.438) ;
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #1a1a1a;
   --bs-accordion-active-bg: #f7f7f7;
 }
 
-.accordion-button:not(.collapsed)::after {
-  transform: var(--bs-accordion-btn-icon-transform);
-}
-
 .accordion-button:not(.collapsed) {
   color: #000000;
-  background-color: #999999;
+  background-color: #c3c3c3;
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #000000;
   text-align: center;
 }
@@ -123,7 +119,7 @@ body {
 header {
   width: 100%;
   background-color: rgb(141, 49, 226);
-  height: 15vh;
+  height: 13vh;
 }
 
 main {
@@ -327,8 +323,6 @@ h4 {
 /*noticias*/
 .mb-4 {
   margin-bottom: 1.5rem !important;
-  margin-left: 4rem;
-  margin-right: 4rem;
 }
 
 #divNoticias {
@@ -842,11 +836,6 @@ hr {
   }
   ol, ul {
     padding: 0;
-  }
-  header {
-    width: 100vw;
-    background-color: rgb(88, 87, 87);
-    height: 13vh !important;
   }
   .navbar {
     position: fixed;

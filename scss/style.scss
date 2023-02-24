@@ -1,6 +1,6 @@
-@import "_variables.scss";
-@import "_fotos.scss";
-@import "atp.scss";
+@import "variables";
+@import "fotos";
+@import "atp";
 
  
 *{
@@ -21,7 +21,7 @@ body{
    
     width: 100%;
     background-color:$colorvioleta;
-    height: 15vh;
+    height: 13vh;
  
   
 
@@ -306,10 +306,11 @@ body{
   
   /*noticias*/
 
+
+
   .mb-4 {
     margin-bottom: 1.5rem!important;
-    margin-left: 4rem;
-    margin-right: 4rem;
+   
   }
     
   #divNoticias{
@@ -318,6 +319,8 @@ body{
     padding: 1rem;
     height: 100vh;
   }
+
+
 
 
 
@@ -1056,12 +1059,7 @@ ol, ul {
 padding: 0;
 }
 
-header{
-   
-  width: 100vw;
-  background-color: $colorgris;
-  height: 13vh!important;
-}
+
 
 .navbar {
   position: fixed;

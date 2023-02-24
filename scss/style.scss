@@ -12,31 +12,27 @@
 body{
     height:100vh;
     width: 100vw;
+
+ 
+  
   }
   
    header{
    
-    width: 100vw;
-    background-color: $colorgris;
+    width: 100%;
+    background-color:$colorvioleta;
     height: 15vh;
  
-    .navbar-brand {
-      padding-top: var(--bs-navbar-brand-padding-y);
-      padding-bottom: var(--bs-navbar-brand-padding-y);
-      margin-right: var(--bs-navbar-brand-margin-end);
-      font-size: 2rem;
-      color: rgb(194, 194, 194);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    
+  
 
  
      }
   
     main{
    
-      width: 100vw;
+      width: 100%;
+      
+         
      
        
     }
@@ -51,9 +47,11 @@ body{
   
       width: 100vw;
       height: 25vh;
-      background-color: rgb(88, 87, 87);
-      padding: 50px;
+      background-color: $colorvioleta;
+      padding: 40px;
      
+     
+
       }
     
     .container-footer{
@@ -91,9 +89,7 @@ body{
     
       }
 
-      .footer-col ul li a:hover{
-        color:rgb(194, 194, 194);
-      }
+   
     
       .footer-redes{
         display: inline;
@@ -234,6 +230,11 @@ body{
     left: 0;
     z-index: 1030;
   }
+
+
+
+  /*navbar*/
+
   .navbar {
     position: relative;
     display: flex;
@@ -242,10 +243,25 @@ body{
     justify-content: space-between;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background: $colorgris;
+    background: $colorvioleta;
+    
 
    
 }
+
+.navbar-brand {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: 2rem;
+  color: rgb(194, 194, 194);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+
+
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -300,8 +316,8 @@ body{
     border:solid 1px;
     border-radius: 1rem;
     padding: 1rem;
+    height: 100vh;
   }
-
 
 
 
@@ -367,197 +383,11 @@ flex-direction: column!important;
 
 
 
-
- 
-
-
-  /*de 320 para arriba mostraeme esto*/
-
- /* @media screen and (min-width: 320px) {   
-    
-  
-  .container{
-    height: auto;
-    
-    }
-   
-}*/
-
-  
    
    
-  
- 
- /* @media screen and (min-width: 576px){
-
-  
-        
-
-            .arriba {
-              position: fixed;
-              right: 0;
-              top: 40%;
-              font-size: 1.5rem;
-              display: flex!important;
-              flex-direction: column!important;
-              align-items: flex;
-              z-index: 1;
-              align-items: center;
-          } 
-          
-        .flex-row {
-          flex-direction: column!important;
-      }
-  
-  
+  /*media queries*/
 
 
-  }*/
- 
-
-
-
-
- /* @media screen and (max-width: 768px) { 
-
-
-    .justify-content-center {
-        justify-content: flex-center!important;
-    }
-    .align-items-center {
-        align-items: center!important;
-    }
-      
-    .overflow{
-      overflow-x: hidden!important;
-    }
-
-    .mb-4 {
-      margin-bottom: 1.5rem!important;
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-
-
-
-
- 
-  .footer-col{
-    width: 50%;
-   margin-bottom: 30px;
-
-  }
-footer{
-  background-color: blueviolet ;
-
-
-}
-
-#lista-footer {
-  list-style: none;
-  text-align: center;
-  padding:0;
-}
-
-  .row-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   justify-items: center;
-  
-    
-  }
-
-  
-
-
-
-
-  } */
-
-
-
-  /*de 576 para abajo mostra esto*/
-
- /* @media screen and (max-width: 576px) { 
-  
-
-    .footer-col{
-      width: 50%;
-     margin-bottom: 30px;
-  
-    }
-  footer{
-    background-color: blueviolet ;
-  
-  
-  }
-  
-  #lista-footer {
-    list-style: none;
-    text-align: center;
-    padding:0;
-  }
-  
- 
-    
-    .row-footer{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-     justify-items: center;
-    
-      
-    }
-
-     .col-lg-6{
-      
-      width: 100%;
-  
-    }
-
- 
-  
-  }*/  
-    
-    
-  
-
-
-  /*de 768 para abajo mostrame esto*/
-
-  /*  @media screen and (max-width: 576px) { 
-   
-  
-      .container{
-      height: auto;
-      
-      }
-    
-        .col-lg-6{
-        width: 50%;
-      }
-      .overflow{
-        overflow-x: hidden!important;
-      }
-  
-      .mb-4 {
-        margin-bottom: 1.5rem!important;
-        margin-left: 3rem;
-        margin-right: 3rem;
-      }
-      
-     
-
-
-    } */
-
-
-  
-
- 
-
- 
 
 
     /*de 2560 para abajo mostrame esto*/
@@ -619,10 +449,23 @@ footer{
        }
 
          
-  .container{
-    height: auto;
+ 
+
+    .navbar {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      background: $colorvioleta;
     
-    }
+  }
+
+  
+
+  
    
       
       }
@@ -708,6 +551,7 @@ footer{
 
 
 
+
  }
 
 
@@ -769,6 +613,8 @@ footer{
       
          }
         
+      
+  
         }
 
 
@@ -900,6 +746,8 @@ footer{
 
    @media screen and (max-width: 768px) { 
 
+   
+
 
     .justify-content-center {
         justify-content: flex-center!important;
@@ -927,7 +775,7 @@ footer{
 
   }
 footer{
-  background-color: blueviolet ;
+ 
   height: auto;
 
 
@@ -1025,7 +873,6 @@ footer{
  }
 
 
-
   } 
 
 
@@ -1099,10 +946,7 @@ footer{
   
   @media screen and (max-width: 320px) {   
   
-    footer{
-      background-color: aqua;
-    }
-    
+   
     
     .footer-col{
       width: 100%;
@@ -1205,7 +1049,7 @@ header{
    
   width: 100vw;
   background-color: $colorgris;
-  height: 10vh!important;
+  height: 13vh!important;
 }
 
 .navbar {
@@ -1216,10 +1060,17 @@ header{
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background: rgb(88, 87, 87);
-  
+  background: $colorvioleta;
+
+
+ 
 }
 
-
+#divNoticias {
+  border: solid 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 100%;
+}
 
 } 

@@ -463,7 +463,10 @@ flex-direction: column!important;
     
   }
 
-  
+  .tabla-ranking {
+    margin-right: 8rem;
+    margin-left: 8rem;
+}
 
   
    
@@ -549,7 +552,10 @@ flex-direction: column!important;
      transition: opacity .15s ease;
  }
 
-
+ .tabla-ranking {
+  margin-right: 6rem;
+  margin-left: 6rem;
+}
 
 
  }
@@ -613,7 +619,7 @@ flex-direction: column!important;
       
          }
         
-      
+     
   
         }
 
@@ -738,6 +744,11 @@ flex-direction: column!important;
     height:500px;
 
    }
+
+   .tabla-ranking{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    }
   
   }
 
@@ -1072,5 +1083,11 @@ header{
   padding: 1rem;
   height: 100%;
 }
+
+.tabla-ranking{
+  margin-right: 0;
+  margin-left: 0;
+  }
+  
 
 } 

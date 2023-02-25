@@ -166,7 +166,7 @@ main {
 /*Footer*/
 footer {
   width: 100vw;
-  height: 25vh;
+  height: 100vh;
   background-color: rgb(141, 49, 226);
   padding: 40px;
 }

@@ -8,12 +8,13 @@
   --bs-table-active-color: var(--bs-body-color);
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: var(--bs-body-color);
-  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  --bs-table-hover-bg: rgb(181 29 191 / 8%);
   width: 100%;
      margin-bottom: 1rem;
   color: var(--bs-table-color);
   vertical-align: top;
   border-color: var(--bs-table-border-color);
+ 
 }
 
 .table>:not(caption)>*>* {
@@ -36,7 +37,6 @@ tr {
 /*Acordion*/
 
 
-
 .accordion {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
@@ -49,12 +49,11 @@ tr {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e)!important;
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e)!important;
-                                  
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e)!important;  
   --bs-accordion-btn-focus-border-color: #d4aae5;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(140, 49, 226, 0.438);
   --bs-accordion-body-padding-x: 1.25rem;
@@ -98,3 +97,7 @@ tr {
   transition: var(--bs-accordion-btn-icon-transition);
 }
 
+.accordion-button:not(.collapsed)::after {
+   background-image: var(--bs-accordion-btn-icon)!important;
+   transform: var(--bs-accordion-btn-icon-transform); 
+}

@@ -216,7 +216,7 @@ h4 {
 }
 
 /*carousel*/
-main .carousel-control-next, main .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -344,7 +344,7 @@ header .navbar-brand {
 
 #divNoticias {
   padding: 1rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .card-title {
@@ -359,9 +359,16 @@ header .navbar-brand {
   text-align: center;
 }
 
-.parrafosnoticias {
+.parrafosNoticias {
   font-size: 1.3rem;
   color: rgb(0, 0, 0);
+}
+
+.titulosNoticias {
+  font-size: 2.5rem;
+  padding: 4rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 /*Botón noticias*/
@@ -401,6 +408,18 @@ hr {
   position: relative;
   display: block;
   padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+  font-size: var(--bs-pagination-font-size);
+  color: rgb(107, 105, 105);
+  text-decoration: none;
+  background-color: var(--bs-pagination-bg);
+  border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page-dos-link {
+  position: relative;
+  display: block;
+  padding: 0.75rem;
   font-size: var(--bs-pagination-font-size);
   color: rgb(107, 105, 105);
   text-decoration: none;
@@ -746,8 +765,23 @@ hr {
   footer {
     height: auto;
   }
+  .parrafosNoticias {
+    font-size: 1.2rem;
+  }
+  .titulosNoticias {
+    font-size: 2.2rem;
+    padding: 3rem;
+    margin: 1rem;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 940px) {
+  .titulosNoticias {
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 1rem;
+    text-align: center;
+  }
   #video-diez {
     width: 660px;
     height: 450px;
@@ -794,8 +828,14 @@ hr {
   .titulos {
     font-size: 2rem;
   }
-  .parrafosnoticias {
+  .parrafosNoticias {
     font-size: 1.2rem;
+  }
+  .titulosNoticias {
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 1rem;
+    text-align: center;
   }
   .arriba {
     display: none !important;
@@ -903,6 +943,12 @@ hr {
   }
 }
 @media screen and (min-width: 580px) and (max-width: 750px) {
+  .titulosNoticias {
+    font-size: 1.8rem;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+  }
   #video-diez {
     width: 500px;
     height: 350px;
@@ -992,6 +1038,12 @@ hr {
   .card-title {
     font-size: 1.2rem;
     margin-bottom: var(--bs-card-title-spacer-y);
+  }
+  .titulosNoticias {
+    font-size: 1.8rem;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -1091,9 +1143,25 @@ hr {
     width: 310px;
     height: 200px;
   }
+  .parrafosNoticias {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .titulosNoticias {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: center;
+  }
 }
 /*de 320 para abajo mostrá esto*/
 @media screen and (max-width: 320px) {
+  .titulosNoticias {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: center;
+  }
   .footer-col {
     width: 100%;
     height: auto;
@@ -1209,8 +1277,9 @@ hr {
     --bs-accordion-active-bg: #f7f7f7;
     padding: 0.5px;
   }
-  .parrafosnoticias {
+  .parrafosNoticias {
     font-size: 1rem;
+    text-align: center;
   }
   .titulos {
     font-size: 1.3rem;

@@ -48,7 +48,7 @@ body{
     }
     
       #lista-footer{
-       @include listafooter;
+       @include listaFooter;
 
       }
     
@@ -101,7 +101,7 @@ body{
 
 /*carousel*/
 
-main{
+
 
 
 .carousel-control-next, .carousel-control-prev {
@@ -123,7 +123,7 @@ main{
 }
 
 
-}
+
 
 
   .align-items-center {
@@ -281,12 +281,12 @@ main{
   #divNoticias{
   
     padding: 1rem;
-    height: 100vh;
+    height: 100%;
   }
 
   .card-title {
    
-  @include cardtitulo;
+  @include cardTitulo;
 
 }
   
@@ -296,9 +296,14 @@ main{
 
 }
 
-.parrafosnoticias{
-@include tamañoparrafos;
+.parrafosNoticias{
+@include tamañoParrafos;
 }
+
+.titulosNoticias{
+    @include titulosNoticias
+}
+
 
   /*Botón noticias*/
   
@@ -318,7 +323,8 @@ main{
     --bs-btn-disabled-bg:  rgb(107, 105, 105);
     --bs-btn-disabled-border-color:  rgb(107, 105, 105);
   }
-  
+
+
 
 
    /*paginación*/
@@ -348,6 +354,18 @@ main{
     border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
+
+  .page-dos-link{
+    position: relative;
+    display: block;
+    padding: 0.75rem;
+    font-size: var(--bs-pagination-font-size);
+    color: rgb(107, 105, 105);
+    text-decoration: none;
+    background-color: var(--bs-pagination-bg);
+    border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
   
   .pagination {
     --bs-pagination-padding-x: 0.75rem;
@@ -812,14 +830,29 @@ flex-direction: column!important;
 footer{
  
   height: auto;
-
-
 }
 
+.parrafosNoticias {
+  font-size: 1.2rem;
+}
+
+.titulosNoticias {
+  font-size: 2.2rem;
+  padding: 3rem;
+  margin: 1rem;
+  text-align: center;
+}
   
   }
 
   @media screen and (min-width: 769px) and (max-width: 940px){
+
+    .titulosNoticias {
+      font-size: 2rem;
+      padding: 3rem;
+      margin: 1rem;
+      text-align: center;
+  }
 
     #video-diez{
       width:660px;
@@ -884,9 +917,16 @@ footer{
    .titulos{
     font-size: 2rem;
    }
-   .parrafosnoticias{
+   .parrafosNoticias{
     font-size: 1.2rem;
   }
+
+  .titulosNoticias {
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
 
     .arriba {
          
@@ -1044,6 +1084,13 @@ footer{
 
   @media screen and (min-width: 580px) and (max-width: 750px){
 
+    .titulosNoticias {
+      font-size: 1.8rem;
+      padding: 2rem;
+      margin: 1rem;
+      text-align: center;
+    }
+
     #video-diez{
       width: 500px;
       height: 350px;
@@ -1175,6 +1222,13 @@ footer{
   margin-bottom: var(--bs-card-title-spacer-y);
 }
 
+.titulosNoticias {
+  font-size: 1.8rem;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
 
 }
 
@@ -1303,6 +1357,18 @@ footer{
 
 }
 
+.parrafosNoticias{
+  font-size: 1rem;
+  text-align:center;
+  }
+
+  .titulosNoticias{
+    font-size: 1.3rem;
+    padding:0.5rem ;
+    margin:1rem;
+    text-align:center; 
+    
+    }
 }
 
 
@@ -1310,7 +1376,13 @@ footer{
   
   @media screen and (max-width: 320px) {   
   
-
+    .titulosNoticias{
+      font-size: 1.3rem;
+      padding:0.5rem ;
+      margin:1rem;
+      text-align:center; 
+      
+      }
     
     .footer-col{
       width: 100%;
@@ -1459,9 +1531,11 @@ padding: 0;
   --bs-accordion-active-bg: #f7f7f7;
   padding: 0.5px;
 }
-.parrafosnoticias{
-font-size: 1rem;
-}
+
+.parrafosNoticias{
+  font-size: 1rem;
+  text-align:center;
+  }
  .titulos{
 font-size: 1.3rem;
 
@@ -1472,4 +1546,6 @@ font-size: 1.3rem;
   font-size: 1.2rem;
   margin-bottom: var(--bs-card-title-spacer-y);
 }
+
+
 } 

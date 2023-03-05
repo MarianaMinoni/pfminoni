@@ -12,14 +12,14 @@ box-sizing: border-box;
    
  }
 
- @mixin listafooter{
+ @mixin listaFooter{
 
     list-style: none;
     text-align: center;
     padding: 0;
  }
 
- @mixin rowfotos{
+ @mixin rowFotos{
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
     display: flex;
@@ -31,7 +31,7 @@ box-sizing: border-box;
     margin-left: calc(-0.5 * var(--bs-gutter-x));
  }
 
- @mixin tamañoparrafos{
+ @mixin tamañoParrafos{
    font-size: $parrafonoticias;
     color: rgb(0, 0, 0);
  }
@@ -39,9 +39,15 @@ box-sizing: border-box;
 
 
 
-@mixin cardtitulo{
+@mixin cardTitulo{
    font-size: 1.3rem ;
    margin-bottom: var(--bs-card-title-spacer-y);
 
 }
 
+@mixin titulosNoticias{
+font-size: 2.5rem;
+padding: 4rem ;
+margin:1rem;
+text-align: center;
+}
